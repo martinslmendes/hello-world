@@ -1,11 +1,10 @@
 import styles from './NavBarItem.module.css';
-import {Link, useLocation} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export default function NavBarItem({children, to}) {
-    const location = useLocation();
     return (
-        <Link className={`${styles.link} ${location.pathname === to ? styles.activeLink : ''}`} to={to}>
+        <NavLink className={({isActive}) => `${styles.link} ${isActive ? styles.active : ''}`} to={to}>
             {children}
-        </Link>
+        </NavLink>
     );
 }
