@@ -1,0 +1,19 @@
+.navigation {
+    align-items: center;
+    column-gap: 3rem;
+    display: flex;
+    height: 112px;
+    justify-content: center;
+}
+
+.link {
+    color: var(--primary-font-color);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 744px) {
+    .navigation {
+        height: 72px;
+    }
+}
