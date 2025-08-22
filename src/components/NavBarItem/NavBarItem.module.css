@@ -1,0 +1,9 @@
+.link {
+    color: var(--primary-font-color);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.activeLink {
+    text-decoration: underline;
+}

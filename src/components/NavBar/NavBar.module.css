@@ -6,12 +6,6 @@
     justify-content: center;
 }
 
-.link {
-    color: var(--primary-font-color);
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-}
-
 @media (max-width: 744px) {
     .navigation {
         height: 72px;

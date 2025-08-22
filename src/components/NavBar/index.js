@@ -1,12 +1,12 @@
-import styles from './Menu.module.css';
-import {Link} from "react-router-dom";
+import styles from './NavBar.module.css';
+import NavBarItem from "../NavBarItem";
 
 export default function NavBar() {
     return (
         <header>
             <nav className={styles.navigation}>
-                <Link className={styles.link} to="/">Home</Link>
-                <Link className={styles.link} to="/about-me">About me</Link>
+                <NavBarItem to="/">Home</NavBarItem>
+                <NavBarItem to="/about-me">About me</NavBarItem>
             </nav>
         </header>
     );
