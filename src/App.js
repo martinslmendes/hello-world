@@ -4,6 +4,7 @@ import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
 import NotFound from "./pages/errors/NotFound";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/about-me" element={<AboutMe/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
+            <Footer/>
         </BrowserRouter>
     );
 }
